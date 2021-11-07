@@ -1,0 +1,50 @@
+.landing-section{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #fff6e6;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+}
+
+.left-content{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-title{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #5c5b52;
+    font-weight: bold;
+}
+
+.name-title{
+    font-size: 96px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    color: #324235;
+}
+
+.right-content{
+    margin-left: 50px;
+}
+
+.profile-img {
+    max-width: 100%;
+    width: 400px;
+}
+
+.scroll-indicator{
+    display: flex;
+    flex-direction: column;
+}
+

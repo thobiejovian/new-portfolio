@@ -1,0 +1,38 @@
+.header-list{
+  background: transparent;
+  position: fixed;
+}
+
+.header-list ul{
+  margin: 0;
+  padding-top: 20px;
+  padding-inline-start: 60px;
+}
+
+.header-list ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.header-list ul li:hover a{
+  opacity: 1;
+}
+
+.header-list ul li:last-child {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.header-list ul li a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+  color: #324235;
+  opacity: 0;
+  transition: all .35s ease-in-out;
+}

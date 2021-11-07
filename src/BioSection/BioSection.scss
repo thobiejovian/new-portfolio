@@ -1,0 +1,52 @@
+.bio-section{
+  height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .bio-heading{
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    color: #5c5b52;
+    font-weight: 400;
+    padding-bottom: 15px;
+    width: 90%;
+    line-height: 62px;
+  }
+
+  .bio-heading:last-child{
+    font-weight: bold;
+  }
+
+  .get-in-touch {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      font-size: 45px;
+      font-family: 'Zen Antique', serif;
+      color: #5c5b52;
+      font-weight: bold;
+      padding-bottom: 15px;
+      line-height: 62px;
+      text-decoration: none;
+
+      &:after {
+        transition: all ease-in-out .4s;
+        background: none repeat scroll 0 0 #5c5b52;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
+    img{
+      max-width: 200px;
+    }
+  }
+}

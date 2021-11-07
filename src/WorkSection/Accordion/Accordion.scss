@@ -1,0 +1,88 @@
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #5c5b52;
+  padding-bottom: 15px;
+  &:last-child {
+    border-bottom: none;
+  }
+  .accordion {
+    color: #444444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    &:hover{
+      .active {
+        background-color: #cccccc;
+      }
+    }
+  }
+
+  .accordion-title{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: #5c5b52;
+  }
+
+  .accordion-icon {
+    margin: 0 auto;
+    transform: rotate(45deg);
+    transition: transform 0.6s ease;
+  }
+
+  .rotate{
+    transform: rotate(90deg);
+  }
+
+  .accordion-content {
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+
+    .accordion-row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 30px;
+
+      .work-left-content{
+        display: flex;
+        flex-direction: column;
+        .details {
+          display: flex;
+          flex-direction: row;
+          width: 570px;
+          padding-bottom: 40px;
+          .details-content{
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            color: #5c5b52;
+            .left-content-heading{
+              font-size: 18px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+            }
+            .left-content-text{
+              font-size: 18px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 400;
+              a {
+                color: #5c5b52;
+              }
+            }
+          }
+        }
+      }
+
+      .accordion-text .work-right-content{
+        font-size: 13px;
+        padding: 18px;
+      }
+    }
+
+  }
+}
