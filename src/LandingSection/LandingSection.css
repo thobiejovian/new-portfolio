@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     background: #fff6e6;
+    visibility: hidden;
 }
 
 .container{
