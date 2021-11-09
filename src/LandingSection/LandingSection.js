@@ -42,7 +42,6 @@ const LandingSection = () => {
                     <img src={Profile} alt="profile" className="profile-img"/>
                 </div>
             </div>
-            <ScrollIndicator name="Thobie's Bio" style="#ffffff"/>
         </div>
     );
 };

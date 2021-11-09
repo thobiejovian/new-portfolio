@@ -1,17 +1,16 @@
 .landing-section{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
     background: #fff6e6;
+    height: 100vh;
     visibility: hidden;
 }
 
 .container{
+    max-width: 1320px;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
-    max-width: 1140px;
+    padding-top: 100px;
 }
 
 .left-content{
@@ -36,12 +35,11 @@
 }
 
 .right-content{
-    margin-left: 50px;
 }
 
 .profile-img {
-    max-width: 100%;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .scroll-indicator{
