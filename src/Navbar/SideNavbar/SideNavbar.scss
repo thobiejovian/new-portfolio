@@ -1,0 +1,106 @@
+.sidenav{
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #181b1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5c5b52;
+  animation: transitionNavbar ease-in-out 0.9s;
+  z-index: 998;
+  .links{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3rem 0;
+    .link{
+      padding: 20px;
+      font-size: 30px;
+      margin: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff6e6;
+      font-family: 'Poppins', sans-serif;
+      border-bottom: 2px solid #dca970;
+    }
+    .close{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: #fff6e6;
+    }
+  }
+}
+.closed {
+  animation: transitionNavbarOut ease-in-out 0.9s;
+}
+/* Hamburger Menu */
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  .menu-btn__burger {
+    width: 37px;
+    height: 4px;
+    background: #324235;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(255,101,47,.2);
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 37px;
+      height: 4px;
+      background: #324235;
+      border-radius: 10px;
+      box-shadow: 0 2px 2px rgba(255,101,47,.2);
+    }
+    &:before {
+      transform: translateY(-16px);
+    }
+    &:after {
+      transform: translateY(16px);
+    }
+  }
+}
+.close {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  .menu-btn__burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    &:before {
+      transform: rotate(45deg) translate(35px, -35px);
+      background: #fff6e6;
+    }
+    &:after {
+      transform: rotate(-45deg) translate(35px, 35px);
+      background: #fff6e6;
+    }
+  }
+}
+@keyframes transitionNavbar {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes transitionNavbarOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

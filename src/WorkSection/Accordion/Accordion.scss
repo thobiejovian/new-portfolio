@@ -24,6 +24,7 @@
     border: none;
     outline: none;
     transition: background-color 0.6s ease;
+    z-index: 10;
     &:hover{
       .accordion-title{
         animation: flip-icon ease-in .7s;

@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import {TweenMax, TimelineLite, Power3} from 'gsap';
+import Header from "../Header/Header";
 import Profile from "../img/landing1.jpg";
 import './LandingSection.css'
 import ScrollIndicator from "../ScrollIndicator/ScrollIndicator";
@@ -30,13 +31,15 @@ const LandingSection = () => {
             opacity: 0,
             delay: .8
         }, .20 , 'Start')
-    }, [tl])
+    }, [])
     return (
         <div className="landing-section" ref={el => app = el}>
             <div className="container">
                 <div className="left-content" ref={el => content = el}>
                     <span className="work-title">Frontend Developer + Cat Enthusiast</span>
                     <span className="name-title">Thobie Jovian</span>
+                    <div className="header-desktop"><Header/></div>
+                    <div className="header-mobile"><Header/></div>
                 </div>
                 <div className="right-content" ref={el => images = el}>
                     <img src={Profile} alt="profile" className="profile-img"/>

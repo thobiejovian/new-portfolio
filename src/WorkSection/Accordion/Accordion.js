@@ -50,11 +50,11 @@ const Accordion = (props) => {
             {background.map(el => (
                 props.slug === el.name
                     ?
-                    <img style={{visibility: setActive ? "hidden" : ""}} key={el.name} src={el.image} ref={el => (accordionBackground = el)}/>
+                    <img style={{opacity: setActive ? "0" : ""}} key={el.name} src={el.image} ref={el => (accordionBackground = el)}/>
                     :
                     ""
                 ))}
-            <span className={`accordion ${setActive}`} onMouseEnter={() => handleBackground(background.image)} onMouseLeave={handleBackgroundReturn} onClick={toggleAccordion}>
+            <span className={`accordion ${setActive}`} onMouseEnter={ !setActive ? () => handleBackground(background.image) : ""} onMouseLeave={handleBackgroundReturn} onClick={toggleAccordion}>
                <span className="accordion-title">{props.title} <span className="accordion-sub-title">{props.subTitle}</span></span>
                 <CloseIcon className={`${setRotate}`} width={20} fill={"#777"}/>
             </span>

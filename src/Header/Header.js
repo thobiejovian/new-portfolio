@@ -23,25 +23,21 @@ const Header = () => {
             x: -30,
             ease: Power3.easeOut,
             opacity: 0},'Start')
-    }, [tl])
+    }, [])
     return (
         <div className="header-list" ref={el => app = el}>
             <ul ref={el => content = el}>
                 <li>
-                    <img src={Github} alt="profile" className="icon" width={20} height={20}/>
-                    <a href="https://github.com/thobiejovian">GitHub</a>
+                    <a href="https://github.com/thobiejovian"><img src={Github} alt="profile" className="icon" width={20} height={20}/><span>GitHub</span></a>
                 </li>
                 <li>
-                    <img src={Linkedin} alt="profile" className="icon" width={20} height={20}/>
-                    <a href="">LinkedIn</a>
+                    <a href="https://github.com/thobiejovian"><img src={Linkedin} alt="profile" className="icon" width={20} height={20}/><span>LinkedIn</span></a>
                 </li>
                 <li>
-                    <img src={Instagram} alt="profile" className="icon" width={20} height={20}/>
-                    <a href="">Instagram</a>
+                    <a href="https://github.com/thobiejovian"><img src={Instagram} alt="profile" className="icon" width={20} height={20}/><span>Instagram</span></a>
                 </li>
                 <li>
-                    <img src={ResumeFile} alt="profile" className="icon" width={20} height={20}/>
-                    <a href="">Résumé</a>
+                    <a href="https://github.com/thobiejovian"><img src={ResumeFile} alt="profile" className="icon" width={20} height={20}/><span>Resumee</span></a>
                 </li>
             </ul>
         </div>

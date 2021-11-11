@@ -4,34 +4,77 @@
     max-width: 1320px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-    ul{
-      list-style-type: none;
-      display: flex;
-      margin-top: 40px;
-      li{
-        margin-right: 60px;
-        &:last-child {
-          margin-right: 0;
-        }
-        a {
-          text-decoration: none;
-          font-size: 17px;
-          font-family: 'Poppins', sans-serif;
-          color: #5c5b52;
-          &:after {
-            transition: all ease-in-out .4s;
-            background: none repeat scroll 0 0 #5c5b52;
-            content: "";
-            display: block;
-            height: 2px;
-            width: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    .left-navbar{
+      span{
+        font-size: 18px;
+        font-family: 'Zen Antique', serif;
+        color: #5c5b52;
+        font-weight: 400;
+      }
+    }
+    .right-navbar {
+      .mobile-nav{
+        display: none;
+      }
+      ul{
+        list-style-type: none;
+        display: flex;
+        li{
+          margin-right: 60px;
+          &:last-child {
+            margin-right: 0;
           }
-          &:hover:after {
-            width: 100%;
+          a {
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Poppins', sans-serif;
+            color: #5c5b52;
+            &:after {
+              transition: all ease-in-out .4s;
+              background: none repeat scroll 0 0 #5c5b52;
+              content: "";
+              display: block;
+              height: 2px;
+              width: 0;
+            }
+            &:hover:after {
+              width: 100%;
+            }
           }
         }
       }
+    }
+  }
+  @media (max-width: 1441px) {
+    .nav-container{
+      max-width: 1140px;
+    }
+  }
+  @media (max-width: 1281px) {
+    .nav-container{
+      max-width: 960px;
+    }
+    .profile-img {
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 1025px) {
+    .nav-container{
+      max-width: 720px;
+      .right-navbar{
+        .mobile-nav{
+          display: flex;
+        }
+        ul{
+          display: none;
+        }
+      }
+    }
+    .header-mobile{
+      display: flex;
     }
   }
 }
