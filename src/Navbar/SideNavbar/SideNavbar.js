@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./SideNavbar.scss";
 
 
-const SideNavbar = ({closeNav, showNavbar}) => {
+const SideNavbar = ({closeSideBar, navClass}) => {
     return (
-            <div className="sidenav">
+            <div className={`sidenav ${navClass}`}>
                 <div className="links">
-                    <div className={`menu-btn ${showNavbar ? "close" : ""}`}>
-                        <div className="menu-btn__burger" onClick={()=>closeNav()}></div>
+                    <div className={`menu-btn ${closeSideBar ? "close" : ""}`}>
+                        <div className="menu-btn__burger" onClick={()=>closeSideBar()}></div>
                     </div>
-                    <a className="link" href="#main" onClick={()=>closeNav()}>Back To Top Please!</a>
-                    <a className="link" href="#skill" onClick={()=>closeNav()}>Bio</a>
+                    <a className="link" href="#main" onClick={()=>closeSideBar()}>Back To Top Please!</a>
+                    <a className="link" href="#skill" onClick={()=>closeSideBar()}>Bio</a>
                     <a className="link" href="/">Work Experience</a>
                     <a className="link" href="/">Side Projects</a>
                 </div>

@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: center;
   color: #5c5b52;
-  animation: transitionNavbar ease-in-out 0.9s;
   z-index: 998;
   .links{
     display: flex;
@@ -25,6 +24,9 @@
       color: #fff6e6;
       font-family: 'Poppins', sans-serif;
       border-bottom: 2px solid #dca970;
+      @media (max-width: 480px) {
+          font-size: 20px;
+      }
     }
     .close{
       font-size: 1.2rem;
@@ -32,6 +34,9 @@
       color: #fff6e6;
     }
   }
+}
+.isOpened{
+  animation: transitionNavbar ease-in-out 0.9s;
 }
 .closed {
   animation: transitionNavbarOut ease-in-out 0.9s;
@@ -72,7 +77,7 @@
 .close {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 12px;
   z-index: 999;
   .menu-btn__burger{
     transform: translateX(-50px);

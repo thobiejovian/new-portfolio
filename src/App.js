@@ -11,23 +11,28 @@ import SideNavbar from "./Navbar/SideNavbar/SideNavbar";
 
 
 function App() {
-    const [showNavbar, setShowNavbar] = useState(false);
+    const [showSideBar, setShowSideBar] = useState(false);
+    const [navClass, setNavClass] = useState("");
 
-    const openNav = () => {
-        setShowNavbar(true);
+    const openSideBar = () => {
+        setShowSideBar(true);
+        setNavClass("isOpened");
         document.body.classList.add('lock-scroll');
     }
 
-    const closeNav = () => {
-        setShowNavbar(false);
+    const closeSideBar = () => {
+        setNavClass("closed");
+        setTimeout(() =>{
+            setShowSideBar(false);
+        }, 900)
         document.body.classList.remove('lock-scroll');
     }
   return (
     <div className="portfolio">
-        <Navbar openNav={openNav}/>
+        <Navbar openSideBar={openSideBar}/>
         {
-            showNavbar ? (
-                <SideNavbar closeNav={closeNav} showNavbar/>
+            showSideBar ? (
+                <SideNavbar closeSideBar={closeSideBar} navClass={navClass}/>
             ) : ''
         }
         <div>

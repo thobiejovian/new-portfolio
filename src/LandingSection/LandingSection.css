@@ -65,7 +65,7 @@
         max-width: 350px;
     }
 }
-@media (max-width: 1441px) {
+@media (max-width: 1550px) {
     .container{
         max-width: 1140px;
     }
@@ -79,11 +79,8 @@
     }
 }
 @media (max-width: 1024px) {
-    .container{
-        max-width: 720px;
-    }
-    .profile-img {
-        max-width: 250px;
+    .landing-section{
+        padding: 0 15px;
     }
     .header-mobile{
         display: flex;
@@ -96,6 +93,29 @@
     }
     .name-title{
         font-size: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+        padding-top: 100px;
+        overflow: hidden;
+    }
+    .right-content{
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .profile-img {
+        max-width: 600px;
+    }
+}
+@media (max-width: 650px) {
+    .profile-img {
+        max-width: 100%;
     }
 }
 
