@@ -4,7 +4,7 @@ import "./WorkSection.scss";
 
 const WorkSection = () => {
     return (
-        <div className="work-section">
+        <div className="work-section" id="work">
             <div className="work-container">
                <span className="work-heading">
                    Work Experience

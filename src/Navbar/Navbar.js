@@ -5,7 +5,6 @@ import "./Navbar.scss"
 const Navbar = ({openSideBar}) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
-
     const handleScroll = debounce(() => {
         const currentScrollPos = window.pageYOffset;
 
@@ -34,13 +33,13 @@ const Navbar = ({openSideBar}) => {
                     </div>
                     <ul>
                         <li>
-                            <a href="">Bio</a>
+                            <a href="#bio">Bio</a>
                         </li>
                         <li>
-                            <a href="">Work</a>
+                            <a href="#work">Work</a>
                         </li>
                         <li>
-                            <a href="">Side Projects</a>
+                            <a href="#side-projects">Side Projects</a>
                         </li>
                     </ul>
                 </div>

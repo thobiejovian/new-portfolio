@@ -31,10 +31,10 @@ const Header = () => {
                     <a href="https://github.com/thobiejovian"><img src={Github} alt="profile" className="icon" width={20} height={20}/><span>GitHub</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/thobiejovian"><img src={Linkedin} alt="profile" className="icon" width={20} height={20}/><span>LinkedIn</span></a>
+                    <a href="https://www.linkedin.com/in/thobiejovian/"><img src={Linkedin} alt="profile" className="icon" width={20} height={20}/><span>LinkedIn</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/thobiejovian"><img src={Instagram} alt="profile" className="icon" width={20} height={20}/><span>Instagram</span></a>
+                    <a href="https://www.instagram.com/tdansjov/"><img src={Instagram} alt="profile" className="icon" width={20} height={20}/><span>Instagram</span></a>
                 </li>
                 <li>
                     <a href="https://github.com/thobiejovian"><img src={ResumeFile} alt="profile" className="icon" width={20} height={20}/><span>Resumee</span></a>

@@ -54,7 +54,7 @@ const Accordion = (props) => {
                     :
                     ""
                 ))}
-            <span className={`accordion ${setActive}`} onMouseEnter={ !setActive ? () => handleBackground(background.image) : ""} onMouseLeave={handleBackgroundReturn} onClick={toggleAccordion}>
+            <span className={`accordion ${setActive}`} onMouseEnter={ !setActive ? () => handleBackground(background.image) : null} onMouseLeave={handleBackgroundReturn} onClick={toggleAccordion}>
                <span className="accordion-title">{props.title} <span className="accordion-sub-title">{props.subTitle}</span></span>
                 <CloseIcon className={`${setRotate}`} width={20} fill={"#777"}/>
             </span>

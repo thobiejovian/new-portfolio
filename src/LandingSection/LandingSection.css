@@ -30,6 +30,11 @@
     font-weight: 300;
     color: #324235;
 }
+@media (max-height: 737px) {
+    .name-title{
+        font-size: 44px !important;
+    }
+}
 
 .right-content{
 }
@@ -78,9 +83,9 @@
         max-width: 300px;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .landing-section{
-        padding: 0 15px;
+        padding: 0 25px;
     }
     .header-mobile{
         display: flex;

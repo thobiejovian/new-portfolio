@@ -8,15 +8,18 @@
     max-width: 450px;
     position: absolute;
     right: 5%;
+    top: -100px;
     opacity: 0;
     transition: visibility 0s, opacity .8s linear;
     background: transparent;
+    @media (max-width: 1279px) {
+      display: none;
+    }
   }
   &:last-child {
     border-bottom: none;
   }
   .accordion {
-    color: #444444;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -32,14 +35,25 @@
     }
   }
 
-  .accordion-title{
+  .accordion-title {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
     color: #5c5b52;
-    padding-top: 20px;
-    .accordion-sub-title{
+    .accordion-sub-title {
       font-size: 25px;
       font-style: italic;
+      @media (max-width: 489px) {
+        white-space: nowrap;
+      }
+    }
+    @media (max-width: 1079px) {
+      font-size: 40px;
+      .accordion-sub-title {
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
     }
   }
 
@@ -57,31 +71,62 @@
     overflow: hidden;
     transition: max-height 0.6s ease;
 
-    .accordion-row{
+    .accordion-row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding-top: 30px;
+      @media (max-width: 849px) {
+        flex-direction: column;
+        .work-left-content{
+          .details{
+            &:last-child{
+              flex-direction: column;
+            }
+          }
+        }
+      }
 
-      .work-left-content{
+
+      .work-left-content {
         display: flex;
         flex-direction: column;
+
         .details {
           display: flex;
           flex-direction: row;
           width: 570px;
           padding-bottom: 40px;
-          .details-content{
+          @media (max-width: 1023px) {
+            width: 100%;
+            .details-content{
+              min-width: 200px;
+            }
+          }
+          @media (max-width: 849px) {
+            .details-content{
+                .left-content-heading{
+                    padding-top: 10px;
+                }
+            }
+          }
+          @media (max-width: 480px) {
+            flex-direction: column;
+          }
+          .details-content {
             display: flex;
             flex-direction: column;
-            min-width: 300px;
+            min-width: 230px;
             color: #5c5b52;
-            .left-content-heading{
+
+
+            .left-content-heading {
               font-size: 18px;
               font-family: 'Poppins', sans-serif;
               font-weight: bold;
             }
-            .left-content-text{
+
+            .left-content-text {
               font-size: 18px;
               font-family: 'Poppins', sans-serif;
               font-weight: 400;
@@ -93,25 +138,29 @@
         }
       }
 
-      .work-right-content{
-        span{
+      .work-right-content {
+        span {
           font-size: 18px;
           font-family: 'Poppins', sans-serif;
           font-weight: bold;
           color: #5c5b52;
         }
-        .accordion-text{
+
+        .accordion-text {
           font-family: 'Poppins', sans-serif;
           color: #5c5b52;
-          ul{
+
+          ul {
             padding: 0;
-            li{
+
+            li {
               list-style-position: outside;
               margin-left: 1em;
               font-size: 18px;
               font-weight: 400;
             }
           }
+
           p {
             font-size: 18px;
             font-weight: 400;
@@ -119,21 +168,21 @@
         }
       }
     }
-  }
-  @keyframes flip-icon {
-    0% {
-      transform: rotateX(360deg);
+    @keyframes flip-icon {
+      0% {
+        transform: rotateX(360deg);
+      }
+      100% {
+        transform: rotateX(0deg);
+      }
     }
-    100% {
-      transform: rotateX(0deg);
-    }
-  }
-  @keyframes flip-icon-reverse {
-    0% {
-      transform: rotateX(0deg);
-    }
-    100% {
-      transform: rotateX(360deg);
+    @keyframes flip-icon-reverse {
+      0% {
+        transform: rotateX(0deg);
+      }
+      100% {
+        transform: rotateX(360deg);
+      }
     }
   }
 }

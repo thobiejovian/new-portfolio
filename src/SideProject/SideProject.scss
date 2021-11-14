@@ -4,10 +4,59 @@
   margin: 0 auto;
   padding-top: 100px;
   flex-direction: column;
+  position: relative;
+  height: 80vh;
+  justify-content: center;
+  .left{
+    left: 15%;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    z-index: 996;
+    @media (max-width: 767px) {
+      left: 5px;
+      width: 25px;
+      height: 25px
+    }
+    }
+  .right{
+    right: 15%;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    z-index: 996;
+    @media (max-width: 767px) {
+      right: 5px;
+      width: 25px;
+      height: 25px
+    }
+  }
   .side-project-headline{
     font-size: 54px;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     color: #5c5b52;
+    margin-bottom: 30px;
+    @media (max-width: 1023px) {
+      font-size: 40px;
+      padding-top: 40px;
+    }
+    @media (max-width: 767px) {
+      font-size: 40px;
+      padding-top: 0;
+      padding-bottom: 20px;
+    }
+  }
+  @media (max-width: 1550px) {
+      max-width: 1140px;
+  }
+  @media (max-width: 1281px) {
+      max-width: 960px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0 25px;
+  }
+  @media (max-width: 767px) {
+    max-width: 100%;
   }
 }

@@ -4,7 +4,7 @@ import illustration from "../img/illuslanding.png";
 
 const BioSection = () => {
     return (
-        <div className="bio-section">
+        <div className="bio-section" id="bio">
             <span className="servus">Servus!</span>
             <span className="bio-heading">I'm Thobie, a Frontend Developer and a Warzone TryHard currently living in Germany. I’ve worked at medium sized agencies as a working student.</span>
             <span className="bio-heading"> As a problem solver, i specialize in merging both design, content and code together to provide easy-to-use, unique and beautiful responsive websites that serve to connect people and ideas.</span>

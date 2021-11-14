@@ -33,7 +33,7 @@ const LandingSection = () => {
         }, .20 , 'Start')
     }, [])
     return (
-        <div className="landing-section" ref={el => app = el}>
+        <div className="landing-section" ref={el => app = el} id="main">
             <div className="container">
                 <div className="left-content" ref={el => content = el}>
                     <span className="work-title">Frontend Developer + Cat Enthusiast</span>
