@@ -2,11 +2,9 @@
   max-width: 1320px;
   display: flex;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 80px;
   flex-direction: column;
   position: relative;
-  height: 80vh;
-  justify-content: center;
   .left{
     left: 15%;
     position: absolute;
@@ -43,7 +41,6 @@
     }
     @media (max-width: 767px) {
       font-size: 40px;
-      padding-top: 0;
       padding-bottom: 20px;
     }
   }
