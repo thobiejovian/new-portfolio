@@ -4,6 +4,7 @@ import ResumeFile from "../img/file.svg";
 import Instagram from "../img/instagram.svg";
 import Github from "../img/github.svg";
 import Linkedin from "../img/linkedin.svg";
+import myPDF from "../img/resume.pdf";
 
 import "./header.scss"
 
@@ -37,7 +38,7 @@ const Header = () => {
                     <a href="https://www.instagram.com/tdansjov/"><img src={Instagram} alt="profile" className="icon" width={20} height={20}/><span>Instagram</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/thobiejovian"><img src={ResumeFile} alt="profile" className="icon" width={20} height={20}/><span>Resumee</span></a>
+                    <a href={myPDF} download="Thobie_Resume.pdf"><img src={ResumeFile} alt="profile" className="icon" width={20} height={20}/><span>Resumee</span></a>
                 </li>
             </ul>
         </div>

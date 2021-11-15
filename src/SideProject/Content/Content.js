@@ -45,11 +45,15 @@ const Content = ({slides}) => {
                                 </a>
                             </div>
                             <div className="bottom-content">
-                                <div className="video-wrap">
-                                    <video muted autoPlay loop>
-                                        <source src={slide.sideVideo} type="video/mp4"/>
-                                    </video>
-                                </div>
+                                <div className="video-wrap" dangerouslySetInnerHTML={{ __html: `
+                                    <video
+                                      loop
+                                      muted
+                                      autoplay
+                                      playsinline
+                                      src="${slide.sideVideo}"
+                                    />,
+                                  ` }}></div>
                             </div>
                         </div>
                         )}
